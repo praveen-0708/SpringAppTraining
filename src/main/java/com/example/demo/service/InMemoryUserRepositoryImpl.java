@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service(value = "InMemory")
+//@Service(value = "InMemory")
 public class InMemoryUserRepositoryImpl implements UserRepository {
 
     private int userId = 1;
