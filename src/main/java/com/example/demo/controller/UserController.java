@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
+import com.example.demo.service.DBUserRepositoryImpl;
 import com.example.demo.service.InMemoryUserRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -24,7 +25,7 @@ public class UserController {
 
     public UserController() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        userRepository = (InMemoryUserRepositoryImpl) context.getBean("InMemory");
+        userRepository = (DBUserRepositoryImpl) context.getBean("DataBaseImpl");
     }
 
     @PostMapping
