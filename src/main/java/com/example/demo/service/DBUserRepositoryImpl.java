@@ -35,7 +35,7 @@ public class DBUserRepositoryImpl implements UserRepository {
     @Override
     public User getUserById(int userId) {
         String query = "select *from user where ID=?";
-        User user = jdbcTemplate.query(query,new Object[]{userId},new UserMapper()).get(0);
+        User user = jdbcTemplate.query(query, new Object[]{userId}, new UserMapper()).get(0);
         return user;
     }
 
