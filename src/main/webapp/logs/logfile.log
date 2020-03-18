@@ -1,0 +1,6 @@
+18-03-2020 14:57:59.376 [http-nio-8080-exec-222] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+18-03-2020 14:58:06.238 [http-nio-8080-exec-227] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+18-03-2020 14:58:07.994 [http-nio-8080-exec-226] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+18-03-2020 14:58:08.100 [http-nio-8080-exec-226] INFO  com.example.demo.filter.AuthenticationFilter  - valid session
+18-03-2020 14:58:12.758 [http-nio-8080-exec-225] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+18-03-2020 14:58:15.908 [http-nio-8080-exec-221] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in

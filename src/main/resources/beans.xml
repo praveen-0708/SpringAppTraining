@@ -21,5 +21,6 @@
         <property name="password" value="admin"/>
     </bean>
 
+    <bean id="filter" class="com.example.demo.filter.AuthenticationFilter"/>
 
 </beans>

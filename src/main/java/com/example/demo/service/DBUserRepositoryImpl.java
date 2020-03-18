@@ -1,6 +1,5 @@
 package com.example.demo.service;
 
-import com.example.demo.mapper.UserMapper;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -35,8 +34,13 @@ public class DBUserRepositoryImpl implements UserRepository {
     @Override
     public User getUserById(int userId) {
         String query = "select *from user where ID=?";
-        User user = jdbcTemplate.query(query, new Object[]{userId}, new UserMapper()).get(0);
-        return user;
+        List<User> users = jdbcTemplate.query(query, new Object[]{userId}, new UserMapper());
+        if(users.size()!=0){
+            return users.get(0);
+        }
+        else{
+            return null;
+        }
     }
 
     @Override
