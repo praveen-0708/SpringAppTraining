@@ -23,7 +23,6 @@ public class AuthenticationFilter implements Filter {
         HttpSession session=request.getSession(false);
         if(session!=null){
             filterChain.doFilter(request,response);
-            logger.info("valid session");
         }
         else {
             logger.info("user not logged in");
@@ -38,3 +37,4 @@ public class AuthenticationFilter implements Filter {
 
     }
 }
+
