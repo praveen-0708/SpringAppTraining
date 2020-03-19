@@ -90,7 +90,7 @@ public class UserController {
     }
 
     @PostMapping("/logout")
-    public String userLogOut(HttpServletRequest request){
+    public String userLogOut(HttpServletRequest request) {
         request.getSession(false).invalidate();
         logger.info("logged out");
         return "logged out";

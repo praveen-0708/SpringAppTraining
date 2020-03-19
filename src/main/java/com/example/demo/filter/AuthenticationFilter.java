@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 
 public class AuthenticationFilter implements Filter {
     private Logger logger = Logger.getLogger(AuthenticationFilter.class);
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -20,13 +21,12 @@ public class AuthenticationFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
-        HttpSession session=request.getSession(false);
-        if(session!=null){
-            filterChain.doFilter(request,response);
-        }
-        else {
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            filterChain.doFilter(request, response);
+        } else {
             logger.info("user not logged in");
-            PrintWriter printWriter=response.getWriter();
+            PrintWriter printWriter = response.getWriter();
             printWriter.write("User not logged in");
             printWriter.close();
         }

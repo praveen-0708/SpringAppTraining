@@ -36,3 +36,4 @@
 19-03-2020 12:24:16.733 [http-nio-8080-exec-53] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
 19-03-2020 12:24:20.852 [http-nio-8080-exec-46] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
 19-03-2020 12:24:26.630 [http-nio-8080-exec-47] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:33:42.295 [http-nio-8080-exec-54] INFO  com.example.demo.filter.AuthenticationFilter  - logged in

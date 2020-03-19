@@ -12,7 +12,7 @@ public class ExceptionHandler {
 
     private ExceptionModel exceptionModel;
 
-    public ExceptionHandler(){
+    public ExceptionHandler() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         exceptionModel = (ExceptionModel) context.getBean("ExceptionModel");
     }

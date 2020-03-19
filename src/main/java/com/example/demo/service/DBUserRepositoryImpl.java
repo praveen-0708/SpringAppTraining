@@ -34,22 +34,21 @@ public class DBUserRepositoryImpl implements UserRepository {
 
     @Override
     public User getUserById(int userId) throws UserNotFoundException {
-        if(!new ValidateUser().isValidUser(userId)){
+        if (!new ValidateUser().isValidUser(userId)) {
             throw new UserNotFoundException("User Not Found");
         }
         String query = "select *from user where ID=?";
         List<User> users = jdbcTemplate.query(query, new Object[]{userId}, new UserMapper());
-        if(users.size()!=0){
+        if (users.size() != 0) {
             return users.get(0);
-        }
-        else{
+        } else {
             return null;
         }
     }
 
     @Override
     public boolean updateUserById(int userId, User user) throws UserNotFoundException {
-        if(!new ValidateUser().isValidUser(userId)){
+        if (!new ValidateUser().isValidUser(userId)) {
             throw new UserNotFoundException("User Not Found");
         }
         String query = "update user set name=? , email=? where ID=?";
@@ -59,7 +58,7 @@ public class DBUserRepositoryImpl implements UserRepository {
 
     @Override
     public boolean deleteUserById(int userId) throws UserNotFoundException {
-        if(!new ValidateUser().isValidUser(userId)){
+        if (!new ValidateUser().isValidUser(userId)) {
             throw new UserNotFoundException("User Not Found");
         }
         String query = "delete from user where ID=?";
