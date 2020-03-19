@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.exceptions.UserNotFoundException;
 import com.example.demo.filter.AuthenticationFilter;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
@@ -46,12 +47,12 @@ public class UserController {
     }
 
     @GetMapping("/users/{id}")
-    public User getUserById(@PathVariable("id") int userId) {
+    public User getUserById(@PathVariable("id") int userId) throws UserNotFoundException {
         return userRepository.getUserById(userId);
     }
 
     @PutMapping("/users/{id}")
-    public String updateUserById(@PathVariable("id") int userId, @RequestBody User user) {
+    public String updateUserById(@PathVariable("id") int userId, @RequestBody User user) throws UserNotFoundException {
         boolean isUpdated = userRepository.updateUserById(userId, user);
         if (isUpdated) {
             return "User Updated";
@@ -61,7 +62,7 @@ public class UserController {
     }
 
     @DeleteMapping("/users/{id}")
-    public String deleteUserById(@PathVariable("id") int userId) {
+    public String deleteUserById(@PathVariable("id") int userId) throws UserNotFoundException {
         boolean isDeleted = userRepository.deleteUserById(userId);
         if (isDeleted) {
             return "User Deleted";

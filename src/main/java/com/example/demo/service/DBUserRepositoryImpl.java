@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.exceptions.UserNotFoundException;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -32,7 +33,10 @@ public class DBUserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public User getUserById(int userId) {
+    public User getUserById(int userId) throws UserNotFoundException {
+        if(!new ValidateUser().isValidUser(userId)){
+            throw new UserNotFoundException("User Not Found");
+        }
         String query = "select *from user where ID=?";
         List<User> users = jdbcTemplate.query(query, new Object[]{userId}, new UserMapper());
         if(users.size()!=0){
@@ -44,14 +48,20 @@ public class DBUserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public boolean updateUserById(int userId, User user) {
+    public boolean updateUserById(int userId, User user) throws UserNotFoundException {
+        if(!new ValidateUser().isValidUser(userId)){
+            throw new UserNotFoundException("User Not Found");
+        }
         String query = "update user set name=? , email=? where ID=?";
         int isUpdated = jdbcTemplate.update(query, user.getName(), user.getEmail(), userId);
         return isUpdated != 0;
     }
 
     @Override
-    public boolean deleteUserById(int userId) {
+    public boolean deleteUserById(int userId) throws UserNotFoundException {
+        if(!new ValidateUser().isValidUser(userId)){
+            throw new UserNotFoundException("User Not Found");
+        }
         String query = "delete from user where ID=?";
         int isDeleted = jdbcTemplate.update(query, userId);
         return isDeleted != 0;

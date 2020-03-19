@@ -23,4 +23,6 @@
 
     <bean id="filter" class="com.example.demo.filter.AuthenticationFilter"/>
 
+    <bean id="ExceptionModel" class="com.example.demo.model.ExceptionModel"/>
+
 </beans>

@@ -1,38 +1,38 @@
-18-03-2020 17:11:34.619 [http-nio-8080-exec-272] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 17:11:36.971 [http-nio-8080-exec-266] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
-18-03-2020 17:30:39.107 [http-nio-8080-exec-285] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
-18-03-2020 17:30:49.790 [http-nio-8080-exec-282] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 17:30:51.777 [http-nio-8080-exec-287] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 17:30:55.264 [http-nio-8080-exec-283] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 17:30:57.550 [http-nio-8080-exec-288] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
-18-03-2020 17:34:41.037 [http-nio-8080-exec-293] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 17:34:44.058 [http-nio-8080-exec-294] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 17:34:47.269 [http-nio-8080-exec-296] INFO  com.example.demo.filter.AuthenticationFilter  - invalid user ID
-18-03-2020 17:39:28.779 [http-nio-8080-exec-296] INFO  com.example.demo.filter.AuthenticationFilter  - invalid user ID
-18-03-2020 17:39:35.302 [http-nio-8080-exec-297] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 17:39:37.689 [http-nio-8080-exec-294] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 17:41:40.073 [http-nio-8080-exec-303] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 17:41:42.746 [http-nio-8080-exec-307] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 17:41:45.916 [http-nio-8080-exec-302] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 17:41:49.437 [http-nio-8080-exec-304] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
-18-03-2020 18:42:52.673 [http-nio-8080-exec-353] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
-18-03-2020 18:43:34.994 [http-nio-8080-exec-363] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 18:43:40.657 [http-nio-8080-exec-361] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 18:43:42.864 [http-nio-8080-exec-357] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 18:43:45.525 [http-nio-8080-exec-360] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
-18-03-2020 18:48:03.495 [http-nio-8080-exec-382] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 18:48:10.340 [http-nio-8080-exec-380] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 18:48:13.696 [http-nio-8080-exec-376] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 18:48:18.457 [http-nio-8080-exec-387] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 18:48:20.701 [http-nio-8080-exec-372] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
-18-03-2020 18:51:43.318 [http-nio-8080-exec-388] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 18:51:47.833 [http-nio-8080-exec-387] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 18:51:50.033 [http-nio-8080-exec-391] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 18:51:55.687 [http-nio-8080-exec-393] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 18:51:57.969 [http-nio-8080-exec-398] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 18:52:00.292 [http-nio-8080-exec-394] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 18:52:04.649 [http-nio-8080-exec-389] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 18:52:29.027 [http-nio-8080-exec-400] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
-18-03-2020 18:52:31.687 [http-nio-8080-exec-401] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
-18-03-2020 18:52:47.193 [http-nio-8080-exec-398] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
-18-03-2020 18:52:56.063 [http-nio-8080-exec-405] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 10:36:44.813 [http-nio-8080-exec-417] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 10:36:48.113 [http-nio-8080-exec-409] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+19-03-2020 10:37:20.975 [http-nio-8080-exec-414] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 10:37:31.572 [http-nio-8080-exec-419] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 10:37:39.150 [http-nio-8080-exec-416] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 10:37:43.888 [http-nio-8080-exec-421] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 10:40:46.826 [http-nio-8080-exec-423] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 10:40:52.356 [http-nio-8080-exec-424] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 10:40:58.389 [http-nio-8080-exec-425] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+19-03-2020 10:41:02.026 [http-nio-8080-exec-417] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 11:31:19.967 [http-nio-8080-exec-2] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 11:31:22.413 [http-nio-8080-exec-3] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+19-03-2020 11:31:27.942 [http-nio-8080-exec-5] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 11:31:30.255 [http-nio-8080-exec-6] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:13:29.989 [http-nio-8080-exec-22] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 12:13:32.374 [http-nio-8080-exec-16] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+19-03-2020 12:13:57.765 [http-nio-8080-exec-17] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 12:14:13.772 [http-nio-8080-exec-28] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:18:16.744 [http-nio-8080-exec-35] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 12:18:19.048 [http-nio-8080-exec-29] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+19-03-2020 12:18:30.666 [http-nio-8080-exec-34] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 12:19:01.653 [http-nio-8080-exec-38] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:19:05.112 [http-nio-8080-exec-39] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:19:10.519 [http-nio-8080-exec-32] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:19:13.878 [http-nio-8080-exec-30] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:19:27.626 [http-nio-8080-exec-26] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 12:19:51.596 [http-nio-8080-exec-38] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 12:22:57.521 [http-nio-8080-exec-37] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 12:22:59.928 [http-nio-8080-exec-41] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+19-03-2020 12:23:08.717 [http-nio-8080-exec-40] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 12:23:11.459 [http-nio-8080-exec-44] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:23:14.738 [http-nio-8080-exec-36] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:23:16.674 [http-nio-8080-exec-42] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:23:40.177 [http-nio-8080-exec-49] INFO  com.example.demo.filter.AuthenticationFilter  - logged in
+19-03-2020 12:23:49.044 [http-nio-8080-exec-39] INFO  com.example.demo.filter.AuthenticationFilter  - list of users
+19-03-2020 12:24:16.733 [http-nio-8080-exec-53] INFO  com.example.demo.filter.AuthenticationFilter  - logged out
+19-03-2020 12:24:20.852 [http-nio-8080-exec-46] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
+19-03-2020 12:24:26.630 [http-nio-8080-exec-47] INFO  com.example.demo.filter.AuthenticationFilter  - user not logged in
