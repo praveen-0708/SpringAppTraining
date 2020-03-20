@@ -42,7 +42,6 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getUsers() {
-        logger.info("list of users");
         return userRepository.getUsers();
     }
 

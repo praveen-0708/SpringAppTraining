@@ -17,15 +17,7 @@ public class ExceptionHandler {
         exceptionModel = (ExceptionModel) context.getBean("ExceptionModel");
     }
 
-    public ExceptionModel getExceptionModel() {
-        return exceptionModel;
-    }
-
-    public void setExceptionModel(ExceptionModel exceptionModel) {
-        this.exceptionModel = exceptionModel;
-    }
-
-    @org.springframework.web.bind.annotation.ExceptionHandler
+    @org.springframework.web.bind.annotation.ExceptionHandler(UserNotFoundException.class)
     public ResponseEntity<ExceptionModel> handleUserNotFoundException(UserNotFoundException exception) {
         exceptionModel.setMessage(exception.getMessage());
         exceptionModel.setStatus("404");
