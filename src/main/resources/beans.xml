@@ -25,4 +25,6 @@
 
     <bean id="ExceptionModel" class="com.example.demo.model.ExceptionModel"/>
 
+    <bean id="HibernateImpl" class="com.example.demo.service.HibernateUserRepositoryImpl"/>
+
 </beans>

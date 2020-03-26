@@ -1,6 +1,15 @@
 package com.example.demo.model;
 
+import javax.persistence.*;
+
+
+@Entity
+@Table(name = "user")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private int userId;
     private String name;
     private String email;

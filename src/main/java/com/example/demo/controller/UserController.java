@@ -4,7 +4,7 @@ import com.example.demo.exceptions.UserNotFoundException;
 import com.example.demo.filter.AuthenticationFilter;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
-import com.example.demo.service.DBUserRepositoryImpl;
+import com.example.demo.service.HibernateUserRepositoryImpl;
 import com.example.demo.service.ValidateUser;
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
@@ -30,7 +30,7 @@ public class UserController {
 
     public UserController() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        userRepository = (DBUserRepositoryImpl) context.getBean("DataBaseImpl");
+        userRepository = (HibernateUserRepositoryImpl) context.getBean("HibernateImpl");
     }
 
 
