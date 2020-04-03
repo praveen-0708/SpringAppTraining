@@ -5,8 +5,11 @@ import com.example.demo.filter.AuthenticationFilter;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.service.HibernateUserRepositoryImpl;
+import com.example.demo.service.JPAUserRepoImpl;
 import com.example.demo.service.ValidateUser;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +33,8 @@ public class UserController {
 
     public UserController() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        userRepository = (HibernateUserRepositoryImpl) context.getBean("HibernateImpl");
+//        userRepository = (HibernateUserRepositoryImpl) context.getBean("HibernateImpl");
+        userRepository = (JPAUserRepoImpl) context.getBean("jpa");
     }
 
 

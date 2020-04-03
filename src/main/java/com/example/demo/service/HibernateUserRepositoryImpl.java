@@ -11,6 +11,7 @@ import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class HibernateUserRepositoryImpl implements UserRepository {
 
@@ -18,7 +19,7 @@ public class HibernateUserRepositoryImpl implements UserRepository {
 
     public HibernateUserRepositoryImpl() {
         factory = new Configuration().configure().addAnnotatedClass(User.class).buildSessionFactory();
-        java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
+        Logger.getLogger("org.hibernate").setLevel(Level.OFF);
     }
 
     @Override
