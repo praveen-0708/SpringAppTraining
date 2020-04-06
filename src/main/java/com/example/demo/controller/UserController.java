@@ -23,18 +23,14 @@ import java.util.List;
 @RequestMapping("/home")
 public class UserController {
 
-//    @Autowired
-//    @Qualifier("InMemory")
-//    private UserRepository userRepository;
-
     private UserRepository userRepository;
 
     private Logger logger = Logger.getLogger(AuthenticationFilter.class);
 
     public UserController() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-//        userRepository = (HibernateUserRepositoryImpl) context.getBean("HibernateImpl");
-        userRepository = (JPAUserRepoImpl) context.getBean("jpa");
+        userRepository = (HibernateUserRepositoryImpl) context.getBean("HibernateImpl");
+//        userRepository = (JPAUserRepoImpl) context.getBean("jpa");
     }
 
 
